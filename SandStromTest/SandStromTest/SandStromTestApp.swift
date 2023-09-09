@@ -11,7 +11,7 @@ import SwiftUI
 struct SandStromTestApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(viewModel: ContentViewViewModel())
         }
     }
 }

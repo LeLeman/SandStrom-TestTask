@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		347162862AAC945800676A5C /* ContentViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347162852AAC945800676A5C /* ContentViewViewModel.swift */; };
+		347162892AAC94BB00676A5C /* FullScreenViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347162882AAC94BB00676A5C /* FullScreenViewViewModel.swift */; };
+		3471628E2AAC971E00676A5C /* FullImageScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3471628D2AAC971E00676A5C /* FullImageScreen.swift */; };
+		347162922AACB3F000676A5C /* Hero in Frameworks */ = {isa = PBXBuildFile; productRef = 347162912AACB3F000676A5C /* Hero */; };
 		348146AA2AA3365D007767AB /* SandStromTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348146A92AA3365D007767AB /* SandStromTestApp.swift */; };
 		348146AC2AA3365D007767AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348146AB2AA3365D007767AB /* ContentView.swift */; };
 		348146AE2AA3365E007767AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 348146AD2AA3365E007767AB /* Assets.xcassets */; };
@@ -14,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		347162852AAC945800676A5C /* ContentViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewViewModel.swift; sourceTree = "<group>"; };
+		347162882AAC94BB00676A5C /* FullScreenViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenViewViewModel.swift; sourceTree = "<group>"; };
+		3471628D2AAC971E00676A5C /* FullImageScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullImageScreen.swift; sourceTree = "<group>"; };
 		348146A62AA3365D007767AB /* SandStromTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SandStromTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		348146A92AA3365D007767AB /* SandStromTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SandStromTestApp.swift; sourceTree = "<group>"; };
 		348146AB2AA3365D007767AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,12 +33,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				347162922AACB3F000676A5C /* Hero in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		347162842AAC93D600676A5C /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				3471628F2AAC97C000676A5C /* Screens */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		347162872AAC947500676A5C /* ViewModelsv */ = {
+			isa = PBXGroup;
+			children = (
+				347162852AAC945800676A5C /* ContentViewViewModel.swift */,
+				347162882AAC94BB00676A5C /* FullScreenViewViewModel.swift */,
+			);
+			path = ViewModelsv;
+			sourceTree = "<group>";
+		};
+		3471628F2AAC97C000676A5C /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				3471628D2AAC971E00676A5C /* FullImageScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		3481469D2AA3365D007767AB = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +86,8 @@
 			children = (
 				348146A92AA3365D007767AB /* SandStromTestApp.swift */,
 				348146AB2AA3365D007767AB /* ContentView.swift */,
+				347162872AAC947500676A5C /* ViewModelsv */,
+				347162842AAC93D600676A5C /* Structs */,
 				348146AD2AA3365E007767AB /* Assets.xcassets */,
 				348146AF2AA3365E007767AB /* Preview Content */,
 			);
@@ -83,6 +118,9 @@
 			dependencies = (
 			);
 			name = SandStromTest;
+			packageProductDependencies = (
+				347162912AACB3F000676A5C /* Hero */,
+			);
 			productName = SandStromTest;
 			productReference = 348146A62AA3365D007767AB /* SandStromTest.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +149,9 @@
 				Base,
 			);
 			mainGroup = 3481469D2AA3365D007767AB;
+			packageReferences = (
+				347162902AACB3F000676A5C /* XCRemoteSwiftPackageReference "Hero" */,
+			);
 			productRefGroup = 348146A72AA3365D007767AB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +178,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				347162892AAC94BB00676A5C /* FullScreenViewViewModel.swift in Sources */,
 				348146AC2AA3365D007767AB /* ContentView.swift in Sources */,
 				348146AA2AA3365D007767AB /* SandStromTestApp.swift in Sources */,
+				347162862AAC945800676A5C /* ContentViewViewModel.swift in Sources */,
+				3471628E2AAC971E00676A5C /* FullImageScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +383,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		347162902AACB3F000676A5C /* XCRemoteSwiftPackageReference "Hero" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/HeroTransitions/Hero";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		347162912AACB3F000676A5C /* Hero */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 347162902AACB3F000676A5C /* XCRemoteSwiftPackageReference "Hero" */;
+			productName = Hero;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3481469E2AA3365D007767AB /* Project object */;
 }
